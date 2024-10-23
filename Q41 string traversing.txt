@@ -1,0 +1,21 @@
+def traversing(s):
+    vowel = 0
+    consonant = 0
+    vowels = "aeiouAEIOU"
+    
+    print("Traversing the string:")
+    for char in s:
+        print(char, end="")
+        if char.isalpha():
+            if char in vowels:
+                vowel += 1
+            else:
+                consonant += 1
+    
+    print("\nTotal vowels:", vowel)
+    print("Total consonants:", consonant)
+    print("This program is written by Pavni Suri - 0221BCA030")
+
+
+s = "Hello World"
+traversing(s)
